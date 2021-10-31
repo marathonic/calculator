@@ -1,0 +1,36 @@
+#container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame{
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: slategrey;
+    width: 18em;
+    height: 32em;
+    flex-wrap: wrap;
+}
+
+#screen {
+    background-color: lightyellow;
+    width: 16em;
+    height: 60px;
+    margin-bottom: 2em;
+    color: black;
+}
+
+.numberinos{
+    padding: 0.5em;
+    color: darkslategray;
+    font-size: 3em;
+    background-color: lightgoldenrodyellow;
+    border: solid slategrey 1px;
+    border-radius: 5px;
+    margin-bottom: 0.25em;
+}
