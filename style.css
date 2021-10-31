@@ -25,6 +25,12 @@
     color: black;
 }
 
+#numberContainer    {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .numberinos{
     padding: 0.5em;
     color: darkslategray;
