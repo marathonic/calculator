@@ -22,32 +22,56 @@ const operate = (dothis,x,y) => {
 
 //Our second attempt is also correct:
 
-function add(a,b){
+let displayValue = document.getElementById('screenOutput');
+let numberinos = document.getElementsByClassName('numberinos');
+
+let numberinoOne = document.getElementById('one').innerText;
+let numberinoTwo = document.getElementById('two').innerText;
+let numberinoThree = document.getElementById('three').innerText;
+let numberinoFour = document.getElementById('four').innerText;
+let numberinoFive = document.getElementById('five').innerText;
+let numberinoSix = document.getElementById('six').innerText;
+let numberinoSeven = document.getElementById('seven').innerText;
+let numberinoEight = document.getElementById('eight').innerText;
+let numberinonNine = document.getElementById('nine').innerText;
+let numberinoZero = document.getElementById('zero').innerText;
+
+numberinos.addEventListener('click', function(){
+    
+};
+
+function addy(a,b){
     let addition = a+b;
     return addition;
 }
 
-function subtract(c,d){
+function subtracty(c,d){
     let subtraction = c-d;
     return subtraction;
 }
 
-function multiply(e,f){
+function multiplyy(e,f){
     let multiplication = e * f;
     return multiplication;
 }
 
-function divide(g,h){
+function dividey(g,h){
     let division = g / h;
     return division;
 }
 
-function operate(operator,x,y){
+function operatey(operator,x,y){
     if (operator && typeof operator == 'function'){
         return operator(x,y)
     }
 }
 
+
+function printValue(){
+    numberinos.addEventListener('click', ()=> {
+        displayValue.textContent = numberinos(textContent)
+    })
+}
 
 
 
