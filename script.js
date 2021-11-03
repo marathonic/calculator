@@ -1,90 +1,22 @@
-/* OUR FIRST ATTEMPT WAS CORRECT LOL BUT WE WERE MISSING OUR RETURN STATEMENT:
+let one = document.getElementById('1');
+let two = document.getElementById('2');
+let three = document.getElementById('3');
+let four = document.getElementById('4');
+let five = document.getElementById('5');
+let six = document.getElementById('6');
+let seven = document.getElementById('7');
+let eight = document.getElementById('8');
+let nine = document.getElementById('9');
+let zero = document.getElementById('0');
 
-const add = (a,b) => a + b;
-const subtract = (a, b) => a - b;
-const multiply = (a,b) => a * b;
-const divide = function(a,b){
-    if (b > a) return (b / a);
-    else if (a > b || a == b) return (a / b);
-} 
+let numberWrapper = document.getElementById('numberWrapper');
 
-function addAgain(a,b){
-    let result = a + b;
-    return result;
-}
+let numberButtons = document.querySelectorAll('.numberinos');
 
-const operate = (dothis,x,y) => {
-    if (dothis && (typeof dothis == 'function'))    {
-        return dothis(x,y);
-}
-};
-*/
+let operators = document.querySelectorAll('.operators');
 
-//Our second attempt is also correct:
-
-let displayValue = document.getElementById('screenOutput');
-let numberinos = document.getElementsByClassName('numberinos');
-
-let numberinoOne = document.getElementById('one').innerText;
-let numberinoTwo = document.getElementById('two').innerText;
-let numberinoThree = document.getElementById('three').innerText;
-let numberinoFour = document.getElementById('four').innerText;
-let numberinoFive = document.getElementById('five').innerText;
-let numberinoSix = document.getElementById('six').innerText;
-let numberinoSeven = document.getElementById('seven').innerText;
-let numberinoEight = document.getElementById('eight').innerText;
-let numberinonNine = document.getElementById('nine').innerText;
-let numberinoZero = document.getElementById('zero').innerText;
-
-numberinos.addEventListener('click', function(){
-    
-};
-
-function addy(a,b){
-    let addition = a+b;
-    return addition;
-}
-
-function subtracty(c,d){
-    let subtraction = c-d;
-    return subtraction;
-}
-
-function multiplyy(e,f){
-    let multiplication = e * f;
-    return multiplication;
-}
-
-function dividey(g,h){
-    let division = g / h;
-    return division;
-}
-
-function operatey(operator,x,y){
-    if (operator && typeof operator == 'function'){
-        return operator(x,y)
-    }
-}
-
-
-function printValue(){
-    numberinos.addEventListener('click', ()=> {
-        displayValue.textContent = numberinos(textContent)
+numberButtons.forEach(function(currentBtn){
+    currentBtn.addEventListener('click', function(){
+        alert(this.id);
     })
-}
-
-
-
-/*
-function one(x) {
-    alert(x);
-}
-
-function two(func) {
-    func();
-}
-
-two(function(){
-    one('hello world')
-});
-*/
+})

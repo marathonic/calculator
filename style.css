@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: slategrey;
+    background-color: lightsalmon;
     width: 18em;
     height: 31em;
     border-radius: 15px;
@@ -19,6 +19,9 @@
 
 }
 
+button:hover {
+    cursor: pointer;
+}
 
 
 #screen {
@@ -31,16 +34,21 @@
     border-radius: 16px;
     margin-bottom: 33px;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 p   {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 42px;
     margin-right: 12px;
     color: black;
 }
 
+#numberWrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .buttonsLeft    {
     display: flex;
@@ -82,7 +90,7 @@ p   {
     margin-bottom: 16px;
 }
 
-.equals {
+.equalsClass {
     background-color: peachpuff;
     font-size: 42px;
     width: 60px;
@@ -104,4 +112,9 @@ p   {
     border: solid slategrey 1px;
     border-radius: 5px;
     margin-bottom: 0.25em;
+}
+
+#one{
+    color: blue;
+    font-size: 30px;
 }
